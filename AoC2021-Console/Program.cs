@@ -12,7 +12,10 @@ namespace AoC2021_Console
             {
                 new Day01(),
                 new Day02(),
-                new Day03()
+                new Day03(),
+                new Day04(),
+                new Day05()
+                // new Day06()  <--- Nonononon ! pas encore !!! il va falloir patienter (surtout pour la partie 2...) :D
             };
 
             days.ToList().ForEach(day =>
