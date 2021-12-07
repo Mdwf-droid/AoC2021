@@ -66,7 +66,7 @@ namespace AoC2021
             points.ForEach(x => m.AddLineAll(x[0], x[1]));
 
 
-            //m.Draw();
+           // m.Draw();
 
             var result = m.GetOverlap();
 
