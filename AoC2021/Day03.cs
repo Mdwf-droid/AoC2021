@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace AoC2021
 {
+    /// <summary>
+    /// --- Day 3: Binary Diagnostic ---
+    /// </summary>
     public class Day03 : ISolveAoc
     {
         public string Solve1stPart()
@@ -34,7 +37,8 @@ namespace AoC2021
 
 
             var result = gama * epsylon;
-            return $"{typeof(Day03).Name}:1stPart Part:{result}";
+
+            return $"{result}";
         }
 
         public string Solve2ndPart()
@@ -62,7 +66,7 @@ namespace AoC2021
             co2ScrubberRating = Convert.ToInt32(diagWindow[0], 2);
 
             var result = oxygenGeneratorRating * co2ScrubberRating;
-            return $"{typeof(Day03).Name}:2ndPart Part:{result}";
+            return $"{result}";
         }
 
         private string[] GetSubDiag(string[] diagWindow, int diagPos, bool oneOnEquals, bool getActiveBits)

@@ -1,6 +1,7 @@
 ﻿using AoC2021;
 using System.Linq;
 using System;
+using System.Diagnostics;
 
 namespace AoC2021_Console
 {
@@ -19,14 +20,27 @@ namespace AoC2021_Console
                 new Day07(),
                 new Day08(),
                 new Day09(),
-                new Day10()
+                new Day10(),
+                new Day11(),
+                new Day12(),
+                new Day13()
             };
 
+            var watch = new Stopwatch();
+            
             days.ToList().ForEach(day =>
             {
-                Console.WriteLine($"{DateTime.Now} - {day.Solve1stPart()}");
-                Console.WriteLine($"{DateTime.Now} - {day.Solve2ndPart()}");
-                Console.WriteLine("---------------------------------------");
+                Console.WriteLine("------------------------------------------------");
+                Console.WriteLine($"{DateTime.Now} - Class Name     : {day.GetType().Name} ");              
+                watch.Start();
+                Console.WriteLine($"{DateTime.Now} - First Part     : {day.Solve1stPart()}");
+                watch.Stop();
+                Console.WriteLine($"{DateTime.Now} - Execution time : {watch.ElapsedMilliseconds} milliseconds");
+                watch.Restart();
+                Console.WriteLine($"{DateTime.Now} - Second Part    : {day.Solve2ndPart()}");
+                watch.Stop();
+                Console.WriteLine($"{DateTime.Now} - Execution time : {watch.ElapsedMilliseconds} milliseconds");
+                Console.WriteLine("------------------------------------------------");
             }
             );
 

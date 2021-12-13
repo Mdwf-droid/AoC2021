@@ -7,6 +7,9 @@ using System.Drawing;
 
 namespace AoC2021
 {
+    /// <summary>
+    /// --- Day 5: Hydrothermal Venture ---
+    /// </summary>
     public class Day05 : ISolveAoc
     {
         public string Solve1stPart()
@@ -36,7 +39,7 @@ namespace AoC2021
 
             var result = m.GetOverlap();
 
-            return $"{typeof(Day05).Name}:1stPart Part:{result}";
+            return $"{result}";
 
 
         }
@@ -70,7 +73,7 @@ namespace AoC2021
 
             var result = m.GetOverlap();
 
-            return $"{typeof(Day05).Name}:2ndPart Part:{result}";
+            return $"{result}";
         }
 
         private string unitTest = @"0,9 -> 5,9

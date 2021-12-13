@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace AoC2021
 {
+    /// <summary>
+    /// --- Day 9: Smoke Basin ---
+    /// </summary>
     public class Day09 : ISolveAoc
     {
         private string _unitTest = @"2199943210
@@ -26,7 +29,7 @@ namespace AoC2021
             result = tbl.GetLowest().Select(x => x.Value + 1).Sum();
 
 
-            return $"{typeof(Day09).Name}:1stPart Part:{result}";
+            return $"{result}";
         }
 
         public string Solve2ndPart()
@@ -42,7 +45,7 @@ namespace AoC2021
             result = tbl.GetBasins();
 
 
-            return $"{typeof(Day09).Name}:2ndPart Part:{result}";
+            return $"{result}";
         }
 
         private class Table

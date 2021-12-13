@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace AoC2021
 {
+    /// <summary>
+    /// --- Day 8: Seven Segment Search ---
+    /// </summary>
     public class Day08 : ISolveAoc
     {
 
@@ -33,16 +36,17 @@ gcafb gcf dcaebfg ecagb gf abcdeg gaef cafbge fdbac fegbdc |fgae cfgab fg bagce"
                        
             var counter = 0;
 
+            var toTest = new int[] { 2, 3, 4, 7 };
             testingSample.ToList().ForEach(x => x.ToList().ForEach(y =>
              {
-                 if (new int[] { 2, 3, 4, 7 }.Contains(y.Length))
+                 if (toTest.Contains(y.Length))
                      counter++;
 
              }));
 
             var result = counter;
 
-            return $"{typeof(Day08).Name}:1stPart Part:{result}";
+            return $"{result}";
         }
 
 
@@ -75,7 +79,7 @@ gcafb gcf dcaebfg ecagb gf abcdeg gaef cafbge fdbac fegbdc |fgae cfgab fg bagce"
 
             });
 
-            return $"{typeof(Day08).Name}:2ndPart Part:{result}";
+            return $"{result}";
         }
 
 

@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace AoC2021
 {
+    /// <summary>
+    /// --- Day 2: Dive! ---
+    /// </summary>
     public class Day02 : ISolveAoc
     {
         private const string Forward = "forward";
@@ -40,7 +43,7 @@ namespace AoC2021
 
             var result = hpos * depth;
 
-            return $"{typeof(Day02).Name}:1st Part:{result}";
+            return $"{result}";
         }
 
         public string Solve2ndPart()
@@ -72,7 +75,7 @@ namespace AoC2021
 
             var result = hpos * depth;
 
-            return $"{typeof(Day02).Name}:2ndPart Part:{result}";
+            return $"{result}";
         }
     }
 }

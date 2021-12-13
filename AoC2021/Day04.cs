@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace AoC2021
 {
+    /// <summary>
+    /// --- Day 4: Giant Squid ---
+    /// </summary>
     public class Day04 : ISolveAoc
     {
         public string Solve1stPart()
@@ -57,7 +60,7 @@ namespace AoC2021
             }
 
 
-            return $"{typeof(Day04).Name}:1stPart Part:{result}";
+            return $"{result}";
 
         }
 
@@ -108,7 +111,7 @@ namespace AoC2021
             }
 
 
-            return $"{typeof(Day04).Name}:2ndPart Part:{result}";
+            return $"{result}";
         }
 
         class Grid

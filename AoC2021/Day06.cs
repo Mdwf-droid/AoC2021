@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace AoC2021
 {
+    /// <summary>
+    /// --- Day 6: Lanternfish ---
+    /// </summary>
     public class Day06 : ISolveAoc
     {
 
@@ -42,7 +45,7 @@ namespace AoC2021
 
             result = fishes.Count();
 
-            return $"{typeof(Day06).Name}:1stPart Part:{result}";
+            return $"{result}";
         }
 
         public string Solve2ndPart()
@@ -59,7 +62,7 @@ namespace AoC2021
 
 
             result = fishAgeShifter.Total;
-            return $"{typeof(Day06).Name}:2ndPart Part:{result}";
+            return $"{result}";
         }
 
 

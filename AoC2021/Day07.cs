@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace AoC2021
 {
+    /// <summary>
+    /// --- Day 7: The Treachery of Whales ---
+    /// </summary>
     public class Day07 : ISolveAoc
     {
         private string unitTest = @"16,1,2,0,4,2,7,1,2,14";
@@ -26,7 +29,7 @@ namespace AoC2021
 
             var result = c.BestPosition();
 
-            return $"{typeof(Day07).Name}:1stPart Part:{result}";
+            return $"{result}";
         }
 
         public string Solve2ndPart()
@@ -45,7 +48,7 @@ namespace AoC2021
 
             var result = c.BestPosition();
 
-            return $"{typeof(Day07).Name}:2ndPart Part:{result}";
+            return $"{result}";
         }
 
         private class CrabFuel

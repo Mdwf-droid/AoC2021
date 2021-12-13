@@ -5,6 +5,9 @@ using System.Collections.Generic;
 
 namespace AoC2021
 {
+    /// <summary>
+    /// --- Day 1: Sonar Sweep ---
+    /// </summary>
     public class Day01 : ISolveAoc
     {
 
@@ -47,7 +50,7 @@ namespace AoC2021
 
 
 
-            return $"{typeof(Day01).Name}:1st Part:{result}";
+            return $"{result}";
 
         }
 
@@ -73,7 +76,7 @@ namespace AoC2021
 
             var result = CountIncreased(slideWindow);
 
-            return $"{typeof(Day01).Name}:2nd Part:{result}";
+            return $"{result}";
 
         }
     }

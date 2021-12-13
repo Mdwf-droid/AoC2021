@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace AoC2021
 {
+    /// <summary>
+    /// --- Day 10: Syntax Scoring ---
+    /// </summary>
     public class Day10 : ISolveAoc
     {
         private readonly string _unitTest = @"[({(<(())[]>[[{[]{<()<>>
@@ -74,7 +77,7 @@ namespace AoC2021
                 return true;
             }));
 
-            return $"{this.GetType().Name}:1stPart Part:{result}";
+            return $"{result}";
         }
 
         public string Solve2ndPart()
@@ -93,7 +96,7 @@ namespace AoC2021
             lineScores = lineScores.Where(x => x != 0).OrderBy(x => x).ToList();
             result = lineScores[lineScores.Count >> 1];
 
-            return $"{this.GetType().Name}:2ndPart Part:{result}";
+            return $"{result}";
         }
 
 
