@@ -11,7 +11,7 @@ namespace AoC2021_Console
         {
             ISolveAoc[] days = new ISolveAoc[]
             {
-                new Day01(),
+                /*new Day01(),
                 new Day02(),
                 new Day03(),
                 new Day04(),
@@ -23,7 +23,10 @@ namespace AoC2021_Console
                 new Day10(),
                 new Day11(),
                 new Day12(),
-                new Day13()
+                new Day13(),
+                new Day14(),
+                new Day15(),*/
+                new Day16()
             };
 
             var watch = new Stopwatch();
